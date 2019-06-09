@@ -1,0 +1,17 @@
+.toolbox-flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  width: 50%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.toolbox-flex-item {
+  border: black;
+  font-family: sans-serif;
+}
+
+.toolbox-flex-item:hover {
+  background: gray;
+}

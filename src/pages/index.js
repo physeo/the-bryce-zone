@@ -1,5 +1,13 @@
 import React from "react"
-import Layout from "../components/layout"
-import RootComponent from "../components/RootComponent"
+import Layout from "../components/Layout"
+// import RootComponent from "../components/RootComponent"
 
-export default () => <RootComponent />
+export default () => (
+  <Layout>
+    <h1>Greetings Fellow Sentients</h1>
+    <p>
+      Welcome to a quick glimpse into the life, hobbies and skills of Bryce
+      Graham
+    </p>
+  </Layout>
+)
