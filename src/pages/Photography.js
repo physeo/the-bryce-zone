@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 
 const Photography = () => (
   <Layout>
-    <h1>Through the eyes of Bryce</h1>
+    <h4>"There are no mistakes, only happy accidents." - Bob Ross</h4>
     <p>Coming Soon...</p>
   </Layout>
 )

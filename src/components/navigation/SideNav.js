@@ -12,6 +12,9 @@ const Nav = () => (
         <Link to="/Toolbox/">Toolbox</Link>
       </li>
       <li>
+        <Link to="/Education/">Education</Link>
+      </li>
+      <li>
         <Link to="/Photography/">Photography</Link>
       </li>
       <li>

@@ -8,10 +8,14 @@
 }
 
 .toolbox-flex-item {
-  border: black;
+  border-right: outset 2px lightgray;
+  border-bottom: outset 2px lightgray;
+  border-radius: 5px;
   font-family: sans-serif;
+  padding: 3px;
+  margin: 3px;
 }
 
 .toolbox-flex-item:hover {
-  background: gray;
+  background: lightgray;
 }
