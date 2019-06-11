@@ -56,7 +56,7 @@ typings/
 
 # gatsby files
 .cache/
-public
+# public
 
 # Mac files
 .DS_Store
@@ -67,3 +67,16 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+public/static/d/140/path---index-6a9-0SUcWyAf8ecbYDsMhQkEfPzV8.json
+public/static/d/181/path---education-a-78-916-0SUcWyAf8ecbYDsMhQkEfPzV8.json
+public/static/d/392/path---dev-404-page-5-f-9-fab-npEPOCGKjAJGxyGMlcVF1WCAMs8.json
+public/static/d/417/path---photography-756-491-0SUcWyAf8ecbYDsMhQkEfPzV8.json
+public/static/d/487/path---dev-404-page-5-f-9-fab-PhWxCuzBLV0N33HRXWl2VwOFfs.json
+public/static/d/622/path---dev-404-page-5-f-9-fab-nmVyIUEm3MRp242V0lchhpNTO6Y.json
+public/static/d/676/path---dev-404-page-5-f-9-fab-iXfQORVIKt2XDLaT4WgV2kY1jbA.json
+public/static/d/752/path---favorite-books-9-d-3-fb1-0SUcWyAf8ecbYDsMhQkEfPzV8.json
+public/static/d/829/path---dev-404-page-5-f-9-fab-o7af702RpOxvpRo1x1JR8NttFI.json
+public/static/d/877/path---dev-404-page-5-f-9-fab-tEcdOSM8WaxSWE6qzCPadgC3U.json
+public/static/d/89/path---toolbox-985-a34-0SUcWyAf8ecbYDsMhQkEfPzV8.json
+public/index.html
+public/favicon.ico
