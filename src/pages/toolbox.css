@@ -4,7 +4,7 @@
   flex-flow: wrap;
   width: 50%;
   align-items: flex-start;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .toolbox-flex-item {
@@ -13,7 +13,7 @@
   border-radius: 5px;
   font-family: sans-serif;
   padding: 3px;
-  margin: 3px;
+  margin: 7px;
 }
 
 .toolbox-flex-item:hover {
