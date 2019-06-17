@@ -24,7 +24,9 @@ class FavoriteBooks extends React.Component {
     ))
     return (
       <Layout>
-        <div>(Hover or tap for deep, insightful wisdom)</div>
+        <div style={{ fontSize: ".8em" }}>
+          (Hover or tap for deep, insightful wisdom)
+        </div>
         <div className="book-cover-flex-container">{bookComponents}</div>
         <div>{SelectedBookQuote === "" ? "" : SelectedBookQuote}</div>
       </Layout>
