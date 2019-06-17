@@ -8,7 +8,7 @@ const linkImageStyle = {
 
 export default () => (
   <Layout>
-    <h1>Greetings Fellow Sentients</h1>
+    <h1>Greetings Fellow Sapients</h1>
     <p>
       Welcome to a quick glimpse into the life, hobbies and skills of Bryce
       Graham
