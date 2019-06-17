@@ -59,7 +59,7 @@ const BookInfo = [
   {
     title: "Semper Mars",
     path: "/images/BookCovers/SemperMarsCover.jpg",
-    quote: "",
+    quote: "“Ooh-rah!”",
   },
   {
     title: "Ringworld",

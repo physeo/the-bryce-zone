@@ -7,7 +7,7 @@ import SideNav from "./navigation/SideNav"
 const Layout = ({ children }) => (
   <div>
     <SideNav />
-    <div style={{ marginLeft: "151px" }}>
+    <div className="main">
       <Header siteTitle="The Bryce Zone" />
       <div
         style={{

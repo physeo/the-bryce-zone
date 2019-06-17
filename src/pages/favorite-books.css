@@ -14,3 +14,13 @@
 .book-cover-flex-item img {
   height: 200px;
 }
+
+.mobile-quote {
+  display: none;
+}
+
+@media screen and (max-width: 450px) {
+  .mobile-quote {
+    display: inline-block;
+  }
+}

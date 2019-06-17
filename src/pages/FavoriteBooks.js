@@ -17,6 +17,7 @@ class FavoriteBooks extends React.Component {
         key={index}
         path={b.path}
         title={b.title}
+        quote={b.quote}
         onHover={() => this.setState({ SelectedBookQuote: b.quote })}
         offHover={() => this.setState({ SelectedBookQuote: "" })}
       />
