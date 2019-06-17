@@ -12,7 +12,7 @@ class FavoriteBooks extends React.Component {
   onMouseLeave = () => this.props.offHover()
 
   render() {
-    const { path, title, quote } = this.props
+    const { path, title } = this.props
 
     return (
       <div>

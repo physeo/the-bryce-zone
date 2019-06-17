@@ -17,12 +17,13 @@ const Layout = ({ children }) => (
           paddingTop: 0,
         }}
       >
-        <main>{children}</main>
+        <main style={{ marginBottom: "26px" }}>{children}</main>
         <footer
           style={{
             width: "100%",
             bottom: 0,
-            position: "fixed",
+            position: "relative",
+            height: "2em",
           }}
         >
           © {new Date().getFullYear()}, Built with
