@@ -65,19 +65,25 @@ class FlickrLightBox extends Component {
         if (!data.photos) {
           throw data
         }
+
         this.setState({
-          images: data.photos.photo.map(p => {
-            return {
-              src:
-                p.url_l ||
-                p.url_m ||
-                "https://s.yimg.com/pw/images/en-us/photo_unavailable.png",
-              thumbnail: p.url_sq,
-              caption: `${p.title || "Untitled"}: Photo by ${p.ownername}`,
-              height: p.height_l,
-              width: p.width_l,
-            }
-          }),
+          images: data.photos.photo
+            .sort((a, b) => {
+              const equal = new Date(b.datetaken) - new Date(a.datetaken)
+              return equal
+            })
+            .map(p => {
+              return {
+                src:
+                  p.url_l ||
+                  p.url_m ||
+                  "https://s.yimg.com/pw/images/en-us/photo_unavailable.png",
+                thumbnail: p.url_sq,
+                caption: `${p.title || "Untitled"}: Photo by ${p.ownername}`,
+                height: p.height_l,
+                width: p.width_l,
+              }
+            }),
         })
       })
       .catch(e => console.error(e))
