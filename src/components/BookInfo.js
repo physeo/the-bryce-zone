@@ -73,6 +73,71 @@ const BookInfo = [
     quote:
       "“...the sensation felt like an unbalanced washing machine filled with a hundred epileptic chimpanzees.”",
   },
+  {
+    title: "Poison Study",
+    path: "/images/BookCovers/PoisonStudyCover.jpg",
+    quote:
+      "“But you’ve slipped under my skin, invaded my blood and seized my heart.”",
+  },
+  {
+    title: "A Game of Thrones",
+    path: "/images/BookCovers/GameOfThronesCover.jpg",
+    quote:
+      "“... a mind needs books as a sword needs a whetstone, if it is to keep its edge.”",
+  },
+  {
+    title: "Star Wars: Heir to the Empire",
+    path: "/images/BookCovers/StarWarsHeirToTheEmpireCover.jpg",
+    quote:
+      "“Anyone can make an error, Ensign. But that error doesn’t become a mistake until you refuse to correct it.”",
+  },
+  {
+    title: "Twilight/Life and Death",
+    path: "/images/BookCovers/TwilightCover.jpg",
+    quote:
+      "“Seriously, though, this wasn’t a life and death situation—it was just high school. It’s not like anyone was going to bite me.”",
+  },
+  {
+    title: "Clockwork Angels",
+    path: "/images/BookCovers/ClockworkAngelsCover.jpg",
+    quote:
+      "“The best place to start an adventure is with a quiet, perfect life... And someone who realizes that it can't possibly be enough.”",
+  },
+  {
+    title: "The Lord of the Rings",
+    path: "/images/BookCovers/LordOfTheRings.jpg",
+    quote:
+      "“It's a dangerous business, Frodo, going out your door. You step onto the road, and if you don't keep your feet, there's no knowing where you might be swept off to.”",
+  },
+  {
+    title: "Ender's Game",
+    path: "/images/BookCovers/EndersGame.jpg",
+    quote:
+      "“If you try and lose then it isn't your fault. But if you don't try and we lose, then it's all your fault.”",
+  },
+  {
+    title: "Terrier",
+    path: "/images/BookCovers/Terrier.jpg",
+    quote:
+      "“Cats must always be cats, even when they are gods, or constellations.”",
+  },
+  {
+    title: "Halo: First Strike",
+    path: "/images/BookCovers/HaloFirstStrike.jpg",
+    quote: "“Maybe our luck will change.”",
+  },
+  {
+    title: "Halo: Glasslands",
+    path: "/images/BookCovers/HaloGlasslands.jpg",
+    quote:
+      "“Revenge might give you a warm feeling, but unless it delivers some lasting results you might as well have a nice cup of mocha instead.”",
+  },
+  {
+    title: "The Lost Years of Merlin",
+    path: "/images/BookCovers/TheLostYearsOfMerlin.jpg",
+    quote:
+      "“My constellations are not made from the stars, but from the spaces between the stars. The dark places. The open places, where your mind can travel forever and ever.”",
+  },
 ]
 
 export default BookInfo
