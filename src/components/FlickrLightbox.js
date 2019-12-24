@@ -1,25 +1,17 @@
-import React, { Component } from "react"
+import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 import buildUrl from "build-url"
 import fetch from "isomorphic-fetch"
 import GalleryLightbox from "./GalleryLightbox"
 
-class FlickrLightBox extends Component {
-  constructor(props) {
-    super(props)
+const FlickrLightBox = (props) => {
+  const [images, imagesSet] = useState([]);
 
-    this.state = { images: [] }
-  }
+  useEffect(() => {
+    queryFlickrApi(props);
+  })
 
-  componentWillMount() {
-    this.queryFlickrApi(this.props)
-  }
-
-  componentWillReceiveProps(nextProps) {
-    this.queryFlickrApi(nextProps)
-  }
-
-  generateApiUrl = props => {
+  const generateApiUrl = props => {
     const extras = [
       "url_l",
       "url_m",
@@ -44,12 +36,13 @@ class FlickrLightBox extends Component {
       queryParams: {
         method:
           props.user_id || props.album_id || props.searchTerm
-            ? "flickr.photos.search"
+          ? "flickr.photosets.getPhotos"  
+          // ? "flickr.photos.search"
             : "flickr.photos.getRecent",
         format: "json",
         api_key: props.api_key || "",
         user_id: props.user_id || "",
-        album_id: props.album_id || "",
+        photoset_id: props.album_id || "",
         text: props.searchTerm || "",
         per_page: props.limit || Number.MAX_SAFE_INTEGER,
         nojsoncallback: "?",
@@ -58,16 +51,16 @@ class FlickrLightBox extends Component {
     })
   }
 
-  queryFlickrApi = props => {
-    fetch(this.generateApiUrl(props))
+  const queryFlickrApi = props => {
+    fetch(generateApiUrl(props))
       .then(response => response.json())
       .then(data => {
-        if (!data.photos) {
+        if (!data.photoset) {
           throw data
         }
 
-        this.setState({
-          images: data.photos.photo
+        const imageResponse = 
+          data.photoset.photo
             .sort((a, b) => {
               const equal = new Date(b.datetaken) - new Date(a.datetaken)
               return equal
@@ -83,15 +76,14 @@ class FlickrLightBox extends Component {
                 height: p.height_l,
                 width: p.width_l,
               }
-            }),
-        })
+            });
+
+        imagesSet(imageResponse);
       })
       .catch(e => console.error(e))
   }
 
-  render() {
-    return <GalleryLightbox photos={this.state.images} />
-  }
+    return <GalleryLightbox photos={images} />
 }
 
 FlickrLightBox.propTypes = {
