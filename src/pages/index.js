@@ -24,7 +24,7 @@ export default () => (
         <h4>Additional Links</h4>
       </legend>
       <div>
-        <a href="www.linkedin.com/in/bryce-graham-34590a49">
+        <a href="https://www.linkedin.com/in/bryce-graham-34590a49/">
           <img
             src="/images/LinkImages/LinkedIn.png"
             alt="LinkedIn Logo"
